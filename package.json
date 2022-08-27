@@ -1,0 +1,30 @@
+{
+  "name": "untitled-finance-tracker-api",
+  "private": true,
+  "version": "0.0.1",
+  "description": "API for the Untitled Finance Tracker Project",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.3.6",
+    "@strapi/plugin-users-permissions": "4.3.6",
+    "@strapi/plugin-i18n": "4.3.6",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "Mauro Napsuciale"
+  },
+  "strapi": {
+    "uuid": "ed0ed470-462d-43f2-90bf-f236684a5080"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
