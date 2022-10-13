@@ -20,6 +20,18 @@
       "relation": "manyToOne",
       "target": "api::goal.goal",
       "inversedBy": "tags"
+    },
+    "expenses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::expense.expense",
+      "inversedBy": "tags"
+    },
+    "incomes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::income.income",
+      "inversedBy": "tags"
     }
   }
 }
