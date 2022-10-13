@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expenses",
+  "info": {
+    "singularName": "expense",
+    "pluralName": "expenses",
+    "displayName": "Expenses",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "float"
+    },
+    "issued_date": {
+      "type": "date"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "ticket": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "goal": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::goal.goal",
+      "inversedBy": "expenses"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "expenses"
+    }
+  }
+}
